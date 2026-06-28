@@ -1,0 +1,237 @@
+:root {
+  --sa-navy: #0f172a;
+  --sa-blue: #0ea5e9;
+  --sa-gray: #f8fafc;
+  --sa-text: #0f172a;
+  --sa-muted: #64748b;
+  --sa-muted-soft: #94a3b8;
+  --sa-white: #ffffff;
+}
+
+body {
+  background-color: var(--sa-white);
+  color: var(--sa-text);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  padding-top: 78px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--sa-text);
+  font-weight: 800;
+}
+
+p,
+li,
+label,
+input,
+textarea,
+button {
+  font-weight: 500;
+}
+
+.site-navbar {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.site-logo {
+  height: 64px;
+  width: auto;
+}
+
+.hero {
+  position: relative;
+  min-height: 420px;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+  color: var(--sa-white);
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.5));
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-home {
+  min-height: 84vh;
+  background-image: url("../img/1.png");
+}
+
+.hero-cursos {
+  background-image: url("../img/headcursos.jpg");
+}
+
+.hero-instructores {
+  background-image: url("../img/headprofesionales.jpg");
+}
+
+.hero-blog {
+  background-image: url("../img/headblog.jpg");
+}
+
+.hero-contacto {
+  background-image: url("../img/headcotacto.png");
+}
+
+.section-block {
+  padding: 4.5rem 0;
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  border-radius: 1.5rem;
+}
+
+.soft-card,
+.course-card,
+.instructor-card,
+.article-card,
+.sidebar-card {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.07);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.soft-card:hover,
+.course-card:hover,
+.instructor-card:hover,
+.article-card:hover,
+.sidebar-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.12);
+}
+
+.course-card .card-img-top {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.rounded-media {
+  border-radius: 1rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.price-row {
+  border-top: 1px solid rgba(15, 23, 42, 0.1);
+  padding-top: 1rem;
+}
+
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main-footer {
+  background-color: var(--sa-navy);
+  color: var(--sa-muted-soft);
+}
+
+.main-footer h4,
+.main-footer h5,
+.main-footer a {
+  color: #ffffff;
+}
+
+.main-footer a {
+  text-decoration: none;
+}
+
+.main-footer a:hover {
+  color: #bae6fd;
+}
+
+.footer-copy {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: #94a3b8;
+}
+
+.map-frame {
+  width: 100%;
+  height: 380px;
+  border: 0;
+  border-radius: 1rem;
+}
+
+.hero-text-narrow {
+  max-width: 760px;
+}
+
+.hero-text-medium {
+  max-width: 860px;
+}
+
+.hero-text-wide {
+  max-width: 960px;
+}
+
+.toast-stack {
+  z-index: 1080;
+}
+
+.hero-home h1 {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-weight: 800;
+}
+
+.hero-home .lead {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 991.98px) {
+  .hero-home {
+    min-height: 70vh;
+  }
+
+  .section-block {
+    padding: 3.5rem 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .blog-sidebar {
+    position: sticky;
+    top: 96px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+    padding-top: 72px;
+  }
+
+  .site-logo {
+    height: 56px;
+  }
+
+  .hero {
+    min-height: 360px;
+  }
+
+  .hero-home {
+    min-height: 68vh;
+  }
+}

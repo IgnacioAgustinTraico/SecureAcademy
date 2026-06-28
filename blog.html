@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog | Secure Academy</title>
+  <meta name="description" content="Articulos tecnicos de Secure Academy sobre seguridad, tiro deportivo y buenas practicas para entrenamiento responsable en Cordoba.">
+  <meta name="keywords" content="blog tiro, seguridad con armas, academia de tiro Cordoba, ANMaC">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top site-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="site-logo" alt="Logo de Secure Academy"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir menu de navegacion"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+            <li class="nav-item"><a class="nav-link" href="instructores.html">Instructores</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-blog">
+      <div class="container py-5">
+        <h1 class="display-2 text-white mb-3">Blog de Secure Academy</h1>
+        <p class="lead text-white mx-auto hero-text-wide">Explora publicaciones tecnicas redactadas por nuestros instructores calificados para mejorar tus destrezas y conocimientos teoricos.</p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-12 col-md-8">
+            <article class="card article-card overflow-hidden h-100">
+              <img src="img/blogmain.png" class="card-img-top" alt="Practica guiada en poligono con alumnos durante instruccion tecnica">
+              <div class="card-body p-4">
+                <p class="text-uppercase text-primary fw-bold mb-2">Seguridad · 14 de Mayo, 2026</p>
+                <h2 class="display-6 fw-bold">Reglas de oro de la seguridad con armas de fuego</h2>
+                <p class="fs-5">Analizamos de forma exhaustiva los cuatro pilares obligatorios de la manipulacion segura en cualquier poligono o campo de tiro homologado, disenados para minimizar incidentes.</p>
+                <p class="mb-0 fw-semibold"><i class="bi bi-person-circle"></i> Por Juan Carlos Perez</p>
+              </div>
+            </article>
+            <div class="row g-4 mt-1">
+              <div class="col-12 col-lg-6">
+                <article class="card article-card h-100 p-4 bg-white">
+                  <img src="img/blog1.png" class="rounded-media mb-3" alt="Ilustracion de francotirador para articulo de dominancia ocular">
+                  <p class="text-uppercase text-primary fw-bold mb-2">Tecnica · 08 de Mayo, 2026</p>
+                  <h2 class="h2">Dominancia ocular: como identificar tu ojo rector</h2>
+                  <p class="mb-0">Un error comun en principiantes es alinear miras con el ojo incorrecto. En esta guia presentamos un test rapido de tres pasos para definirlo.</p>
+                </article>
+              </div>
+              <div class="col-12 col-lg-6">
+                <article class="card article-card h-100 p-4 bg-white">
+                  <img src="img/blo2.png" class="rounded-media mb-3" alt="Arma de competencia desarmada para mantenimiento y conocimiento tecnico">
+                  <p class="text-uppercase text-primary fw-bold mb-2">Competicion · 29 de Abril, 2026</p>
+                  <h2 class="h2">Introduccion a las disciplinas de recorridos de tiro</h2>
+                  <p class="mb-0">Conoce las bases tecnicas esenciales, divisiones y normativas internacionales de la International Practical Shooting Confederation.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <aside class="col-md-4 d-none d-md-grid gap-4 blog-sidebar">
+            <section class="card sidebar-card p-4 bg-white">
+              <h2 class="h3 mb-3">Buscar en el Blog</h2>
+              <label for="blogSearch" class="form-label">Palabras clave</label>
+              <input id="blogSearch" class="form-control" type="search" placeholder="Ej: ANMaC, miras, limpieza">
+            </section>
+
+            <section class="card sidebar-card p-4 bg-white">
+              <h2 class="h3 mb-3">Categorias Especializadas</h2>
+              <ul class="list-unstyled mb-0">
+                <li class="py-2"><i class="bi bi-folder"></i> Protocolos de Seguridad <span class="fw-bold">12</span></li>
+                <li class="py-2"><i class="bi bi-folder"></i> Balistica y Municion <span class="fw-bold">8</span></li>
+                <li class="py-2"><i class="bi bi-folder"></i> Tiro Practico y Deportivo <span class="fw-bold">15</span></li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer pt-5">
+    <div class="container pb-4">
+      <div class="row g-4">
+        <section class="col-lg-4"><h4 class="h2 mb-3"><i class="bi bi-crosshair"></i> Secure Academy</h4><p>Plataforma premium de capacitacion y entrenamiento responsable bajo normativas ANMaC. Formamos profesionales en seguridad y tiro deportivo.</p></section>
+        <nav class="col-sm-6 col-lg-3" aria-label="Mapa del sitio en pie de pagina"><h5 class="mb-3">Mapa del Sitio</h5><p><a href="index.html">Inicio</a></p><p><a href="cursos.html">Cursos Disponibles</a></p><p><a href="instructores.html">Nuestros Instructores</a></p><p><a href="blog.html">Blog y Articulos</a></p><p><a href="contacto.html">Contacto</a></p></nav>
+        <section class="col-sm-6 col-lg-3"><h5 class="mb-3">Soporte y Legal</h5><p>Preguntas Frecuentes</p><p>Reglamento Interno</p><p>Terminos del Servicio</p><p>Politicas de Privacidad</p></section>
+        <address class="col-lg-2 mb-0"><h5 class="mb-3">Sede Central</h5><p><i class="bi bi-geo-alt"></i> Ruta Provincial 5, Santa Fe</p><p><i class="bi bi-envelope"></i> info@secureacademy.ar</p></address>
+      </div>
+    </div>
+    <div class="footer-copy text-center py-3"><small>© 2026 KERNEL PANIC | Copyleft | Trabajo Practico DSW UTN</small></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
